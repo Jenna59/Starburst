@@ -1,0 +1,145 @@
+/* styling for the main content pages */
+
+@media (max-width: 576px) {
+	section h2 {
+		font-size: 1.4em;
+		text-align: center;
+	}
+
+	h3 {
+		font-size: 1.2em;
+		margin: 5%;
+	}
+
+	/* very important to be as specific as possible when you have multiple stylesheets so that you do not get rule conflicts.*/ 
+	section p {
+		margin: 5%;
+		text-align: left;
+	}
+
+	h4 {
+		font-size: 1em;
+		margin: 5%;
+	}
+
+	aside p {
+		margin: 5%;
+		text-align: left;
+	}
+
+	/* in the interests of limiting the number of stylesheets, I used an id here because I don't know how to reference an element from a specific html file. */
+	#flavour {
+		text-align: center;
+	}
+}
+
+
+/**********FOR LARGER DEVICES***********/
+
+@media (min-width: 577px) {
+
+	#wrapper {
+		display: flex;  
+	}
+
+	nav {
+		order: 1;
+		max-width: 15%;
+	}
+
+	section {
+		flex: 2;
+		order: 2;
+	}
+
+	section h2 {
+		text-align: center;
+		font-size: 2em;
+	}
+
+	section h3 {
+		text-align: center;
+		font-size: 1.6em;
+		margin-bottom: 0;
+		margin-top: 5%;
+	}
+
+	/* targeting elements in a specific html file when more than one html file is using the same stylesheet */
+	.flav {
+		margin: 1%;
+	}
+
+	.left {
+		text-align: left;
+	}
+
+	section p {
+		text-align: center;
+		font-size: 1.4em;
+	}
+
+	aside {
+		order: 3;
+		max-width: 20%;
+	}
+
+	aside p {
+		font-size: 1em;
+	}
+
+	section img {
+		display: flex;
+		align-self: right;
+	}
+} 
+
+/*********General Style Rules**********/
+section {
+	margin: 0% 5%;
+}
+
+aside {
+	margin: 0% 5%;
+}
+
+section h2 {
+	font-family: 'Coiny', cursive;
+	font-weight: 200;
+}
+
+h3 {
+	font-family: 'Coiny', cursive;
+	font-weight: 100;
+}
+
+h4 {
+	font-family: 'Coiny', cursive;
+	font-weight: 100;
+	font-size: 1.2em;
+}
+
+section p {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+section img {
+	display: flex;
+	margin: auto;
+}
+
+aside ul li {
+		font-family: 'Source Sans Pro', sans-serif;
+}
+
+aside p {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+aside img {
+	display: flex;
+	margin: auto;
+	border: solid rgb(255, 255, 255) 3px;
+	border-radius: 10%;
+}
+
+

@@ -1,0 +1,72 @@
+/* specific styling for the landing page */
+
+/**********Mobile**********/
+@media (max-width: 576px) {
+  section p {
+    font-size: 1.3em;
+    margin: 5%;
+    text-align: center;
+  }
+
+  section p:last-child {
+    font-size: 1em;
+  }
+
+  img {
+    margin: auto;
+  }
+}
+
+/********Larger Devices********/
+@media (min-width: 577px) {
+  #wrapper {
+    display: flex;
+  }
+
+  nav {
+    order: 1;
+    max-width: 15%;
+  }
+
+  nav ul {
+    /*justify-content: center;*/
+    align-self: center;
+  }
+
+  section {
+    flex: 2;
+    order: 2;
+  }
+
+  section p {
+    margin-right: 12%;
+    text-align: center;
+    font-size: 1.8em;
+    color: rgb(21, 21, 21);
+  }
+
+  section p:last-child {
+    font-size: 1.5em;
+  }
+
+  img {
+    margin-left: 37%;
+  }
+}
+
+/*********General Style Rules***********/
+
+img {
+  border-radius: 50%;
+  display: flex;
+}
+
+section p {
+  font-family: 'Coiny', cursive;
+  font-weight: 200;
+}
+
+section p:last-child {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+}

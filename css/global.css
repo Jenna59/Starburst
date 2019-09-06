@@ -1,0 +1,60 @@
+/* Containing global styles for header, footer, and navigation */
+
+/***********MOBILE FIRST APPROACH************/
+
+/* Breakpoint information taken from Bootstrap (https://v4-alpha.getbootstrap.com/layout/overview/) */
+
+/* If device width is less than or equal to 576px then do this. See: https://www.emailonacid.com/blog/article/email-development/emailology_media_queries_demystified_min-width_and_max-width, https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862, */
+@media (max-width: 576px) {
+  main nav ul {
+    display: flex;
+    /* evenly distributes the items within the alignment container along the main axis. The spacing between each pair of adjacent items, the main-start edge and the first item, and the main-end edge and the last item, are all exactly the same. */
+    justify-content: space-evenly;
+    padding: 5%;
+  }
+}
+
+/*************Global Style Rules***************/
+
+/* General styling utilized across pages and device widths */
+
+html {
+  background-color: rgb(248, 206, 122);
+}
+
+header h1 {
+  font-family: 'Coiny', cursive;
+  font-size: 4em;
+  /* Coiny is a very thick decorative font. I made the decision to decrease the font-weight in order to use it for mobile while attempting to limit legibility issues on small screens. */
+  font-weight: 200;
+  color: rgb(190, 15, 48);
+  text-align: center;
+  background-color: rgb(248, 206, 122);
+  margin: 0;
+}
+
+main nav ul li {
+  list-style: none;
+  padding: 5%;
+}
+
+main nav ul li a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.4em;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+main nav ul li a:hover {
+  border-bottom: 4px solid rgb(190, 15, 48);
+}
+
+.active {
+  border-bottom: 4px solid rgb(190, 15, 48);
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Source Sans Pro', sans-serif;
+}
